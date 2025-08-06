@@ -14,7 +14,7 @@ public class EnemyUI : MonoBehaviour
     public float moveSpeed = 1f;
     public float detectionRange = 2f;
     public float attackRange = 1f;
-    public float attackDamage = 5f;
+    public float attackDamage = 100f;
     public float attackCooldown = 1f;
 
     [SerializeField] private float _health = 100f;

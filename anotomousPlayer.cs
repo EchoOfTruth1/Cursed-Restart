@@ -210,6 +210,7 @@ public class AutonomousPlayer : MonoBehaviour
             health = 0;
             // Handle player death
             Debug.Log("Player has died!");
+            Destroy(gameObject);
         }
     }
 }

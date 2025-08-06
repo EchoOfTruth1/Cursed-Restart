@@ -21,4 +21,25 @@ public class BackgroundScroller : MonoBehaviour
             }
         }
     }
+
+    // Declare the gameover variable
+    public bool gameover = false;
+
+    // Example: Check for player null inside Update (assuming 'player' is defined elsewhere)
+    // Uncomment and adjust as needed:
+
+    // Make sure to declare 'player' at the class level
+    public GameObject player;
+
+    void LateUpdate()
+    {
+        if (player == null)
+        {
+            gameover = true;
+        }
+    }
+
+    // Declare movespeed before using it
+    public float movespeed = 0.5f;
+    public float moveLeft = 0.5f * Time.deltaTime;
 }
